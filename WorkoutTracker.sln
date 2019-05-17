@@ -8,7 +8,37 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		SqlQuery_1.sql = SqlQuery_1.sql
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BussinessLogic", "BussinessLogic\BussinessLogic.csproj", "{E4CB367F-AD37-4492-9F3C-F6F758103979}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{218775CB-6B93-4CB9-BFB8-6F939DB62832}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkoutApi", "WorkoutApi\WorkoutApi.csproj", "{4E002148-4608-4D8B-9BD7-BC1D3D87160A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkoutUIAngular", "WorkoutUIAngular\WorkoutUIAngular.csproj", "{2452C3A6-2CE3-4198-85D0-73C39CE3900F}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4CB367F-AD37-4492-9F3C-F6F758103979}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4CB367F-AD37-4492-9F3C-F6F758103979}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4CB367F-AD37-4492-9F3C-F6F758103979}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4CB367F-AD37-4492-9F3C-F6F758103979}.Release|Any CPU.Build.0 = Release|Any CPU
+		{218775CB-6B93-4CB9-BFB8-6F939DB62832}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{218775CB-6B93-4CB9-BFB8-6F939DB62832}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{218775CB-6B93-4CB9-BFB8-6F939DB62832}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{218775CB-6B93-4CB9-BFB8-6F939DB62832}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E002148-4608-4D8B-9BD7-BC1D3D87160A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E002148-4608-4D8B-9BD7-BC1D3D87160A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E002148-4608-4D8B-9BD7-BC1D3D87160A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E002148-4608-4D8B-9BD7-BC1D3D87160A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2452C3A6-2CE3-4198-85D0-73C39CE3900F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2452C3A6-2CE3-4198-85D0-73C39CE3900F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2452C3A6-2CE3-4198-85D0-73C39CE3900F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2452C3A6-2CE3-4198-85D0-73C39CE3900F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
