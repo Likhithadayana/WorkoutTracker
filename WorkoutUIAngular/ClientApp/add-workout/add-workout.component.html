@@ -1,0 +1,66 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+
+
+      <form novalidate [formGroup]="fg" (ngSubmit)="saveData(fg)">
+
+
+        <div class="form-group col-md-12">
+          <label>Title</label>
+          <input type="text" name="title" id="title" formControlName="title" class="form-control"
+                 [ngClass]="{'is-valid':f.title.valid,'is-invalid':f.title.invalid && f.title.dirty}">
+          <div *ngIf="f.title.invaild && f.title.dirty && f.title.errors?.required" class="invalid-feedback">
+            Title is required
+          </div>
+          <div *ngIf="f.title.invaild && f.title.dirty && f.title.errors?.pattern" class="invalid-feedback">
+            only alphabets are allowed
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Note</label>
+          <textarea type="text" name="note" id="note" formControlName="note" class="form-control"
+                    [ngClass]="{'is-valid':f.note.valid,'is-invalid':f.note.invalid && f.note.dirty}"></textarea>
+          <div *ngIf="f.note.invaild && f.note.dirty && f.note.errors?.required" class="invalid-feedback">
+            Note is required
+          </div>
+          <div *ngIf="f.note.invaild && f.note.dirty && f.note.errors?.pattern" class="invalid-feedback">
+            only alphabets are allowed
+          </div>
+
+        </div>
+
+
+
+        <div class="form-group form-inline">
+          <label>Calories Burnt Per Min</label>
+          <input type="text" name="Calory" id="Calory" formControlName="Calory" class="form-control" value="{{count}}" />
+
+          <button type="submit" class="btn btn-success" (click)="increment()">+</button>
+          <button type="submit" class="btn btn-danger" (click)="decrement()">-</button>
+        </div>
+
+        <div class="form-group" >
+          <label>Category</label>
+          <select>
+            <option *ngFor="let cat of catagory" >{{cat.categoryname}}</option>
+
+          </select>
+          <button type="submit" class="btn btn-primary">+</button>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" [disabled]="!fg.valid" class="btn btn-success">Add Workout</button>
+        </div>
+
+      </form>
+
+
+
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <app-add-catagory (catagoryadded)='Savecategory($event)'></app-add-catagory>
+
+    </div>
+
+    <div class="form-group col-md-3">
+      <input type="text" name="catagoryname" id="catagoryname" 
+             class="form-control" [(ngModel)]="searchterm" />
+    
+     
+
+      <div class="col-md-12">
+        <table class="table">
+
+          <tr *ngFor="let cat of  catagory | filter: searchterm ">
+            <app-edit-delete [AddName]="cat" (EditAdded)="EditCatagory($event)" (Deleted)="Delete($event)"></app-edit-delete>
+          
+        </table>
+        
+
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+
